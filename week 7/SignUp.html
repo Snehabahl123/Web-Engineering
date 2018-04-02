@@ -2,6 +2,7 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="SignUp.css">
+<script type="text/javascript" src="date_time.js"></script>
 <title>Sign Up</title>
 
 </head>
@@ -14,6 +15,11 @@
 	
 <body>
 <br>
+
+<span id="date_time"></span>
+<script type="text/javascript">window.onload = date_time('date_time');</script>
+
+
 <form name="SignUpForm" onsubmit="return validate()" >
 <div class=c>
   First name:<br>
@@ -34,6 +40,9 @@
 </div>
 
 </form>
+
+
+
 </body>
 
 <script>
@@ -63,9 +72,6 @@ else
 alert("password must be atleast 6 character long");
 }
 
-
-d = new Date();
-document.getElementById("date").innerHTML = d.toString();
 
 
 
